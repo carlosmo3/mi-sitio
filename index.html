@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Mejorado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            font-family: 'Nunito', 'Avenir', sans-serif;
+            background-color: #0f0f0f;
+            color: #e8e8e8;
+            overflow: hidden;
+        }
+
+        .contenedor {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .lado-foto {
+            width: 55%;
+            height: 100%;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .lado-foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            filter: brightness(0.85);
+        }
+
+        .lado-contenido {
+            width: 45%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 48px;
+            overflow-y: auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+            font-weight: 300;
+        }
+
+        .logo strong {
+            font-weight: 700;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 28px;
+        }
+
+        nav ul a {
+            color: #e8e8e8;
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            opacity: 0.6;
+            transition: opacity 0.3s;
+        }
+
+        nav ul a:hover {
+            opacity: 1;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+        }
+
+        section h2 {
+            font-size: 0.75rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            opacity: 0.4;
+            margin-bottom: 24px;
+        }
+
+        .plataformas {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .plataformas a {
+            color: #e8e8e8;
+            text-decoration: none;
+            border: 1px solid rgba(255,255,255,0.15);
+            padding: 14px 24px;
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+            transition: all 0.3s;
+        }
+
+        .plataformas a:hover {
+            background-color: rgba(255,255,255,0.08);
+            border-color: rgba(255,255,255,0.4);
+        }
+
+        .fecha {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .fecha-dia { font-size: 0.9rem; }
+
+        .fecha-lugar {
+            font-size: 0.85rem;
+            opacity: 0.45;
+        }
+
+        footer p {
+            font-size: 0.78rem;
+            opacity: 0.35;
+            letter-spacing: 0.08em;
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <div class="lado-foto">
+            <img src="DSC04436.jpeg" alt="Carlos Mejorado">
+        </div>
+
+        <div class="lado-contenido">
+
+            <header>
+                <span class="logo">carlos<strong>mo</strong></span>
+                <nav>
+                    <ul>
+                        <li><a href="#musica">Música</a></li>
+                        <li><a href="#fechas">Fechas</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <section id="musica">
+                    <h2>Música</h2>
+                    <div class="plataformas">
+                        <a href="https://open.spotify.com/intl-es/artist/0pETo7EXNBE5zT8tOqoWQe?si=HD9h33dRQmW53yu1oWbhNw" target="_blank">Spotify</a>
+                        <a href="https://music.apple.com/mx/artist/carlos-mejorado/1213599059" target="_blank">Apple Music</a>
+                        <a href="https://www.youtube.com/@carlos_mejorado" target="_blank">YouTube</a>
+                    </div>
+                </section>
+
+                <section id="fechas">
+                    <h2>Fechas</h2>
+                    <div class="fecha">
+                        <span class="fecha-dia">15 Mayo 2026</span>
+                        <span class="fecha-lugar">Ciudad — Venue</span>
+                    </div>
+                </section>
+            </main>
+
+            <footer id="contacto">
+                <p>contacto@carlosmejorado.com</p>
+                <p>© 2026 Carlos Mejorado</p>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+</html>
