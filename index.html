@@ -146,6 +146,68 @@
             letter-spacing: 0.08em;
             margin-bottom: 6px;
         }
+
+        /* MÓVIL */
+        @media (max-width: 768px) {
+            html, body {
+                overflow: auto;
+                height: auto;
+            }
+
+            .contenedor {
+                flex-direction: column;
+                height: auto;
+                min-height: 100vh;
+            }
+
+            .lado-foto {
+                width: 100%;
+                height: 60vw;
+                min-height: 260px;
+                flex-shrink: 0;
+            }
+
+            .lado-contenido {
+                width: 100%;
+                height: auto;
+                padding: 32px 24px;
+                gap: 48px;
+                justify-content: flex-start;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+
+            nav ul {
+                gap: 20px;
+            }
+
+            .logo {
+                font-size: 1.4rem;
+            }
+
+            main {
+                gap: 48px;
+            }
+
+            .plataformas a {
+                padding: 16px 24px;
+                font-size: 0.95rem;
+            }
+
+            .fecha {
+                flex-direction: column;
+                gap: 4px;
+                align-items: flex-start;
+            }
+
+            footer {
+                padding-top: 32px;
+            }
+        }
     </style>
 </head>
 <body>
